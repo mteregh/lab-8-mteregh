@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Authentication
 
-Things you may want to cover:
+This application now requires authentication and is no longer fully open to anonymous users.
 
-* Ruby version
+Visitors who are not signed in can only access the public home page. All VetClinic resources (owners, pets, vets, appointments, and treatments) require a signed-in user.
 
-* System dependencies
+---
 
-* Configuration
+## Seeded User Credentials
 
-* Database creation
+After running:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+bin/rails db:drop db:create db:migrate db:seed
