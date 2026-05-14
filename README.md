@@ -15,13 +15,9 @@ After running:
 ```bash
 bin/rails db:drop db:create db:migrate db:seed
 
-## Sign in
-you can sign in with the following users:
 
-Role	Email	Password
-Admin	admin@vetclinic.com
-	password123
-Vet	vet@vetclinic.com
-	password123
-Owner	owner@vetclinic.com
-	password123
+| Role  | Email                                             | Password    |
+| ----- | ------------------------------------------------- | ----------- |
+| Admin | [admin@vetclinic.com](mailto:admin@vetclinic.com) | password123 |
+| Vet   | [vet@vetclinic.com](mailto:vet@vetclinic.com)     | password123 |
+| Owner | [owner@vetclinic.com](mailto:owner@vetclinic.com) | password123 |
