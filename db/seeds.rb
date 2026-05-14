@@ -12,7 +12,32 @@ Treatment.destroy_all
 Appointment.destroy_all
 Pet.destroy_all
 Vet.destroy_all
+User.destroy_all
 Owner.destroy_all
+
+users = [
+  User.create!(
+    first_name: "Admin",
+    last_name: "User",
+    email: "admin@vetclinic.com",
+    password: "password123",
+    role: :admin
+  ),
+  User.create!(
+    first_name: "Vet",
+    last_name: "User",
+    email: "vet@vetclinic.com",
+    password: "password123",
+    role: :vet
+  ),
+  User.create!(
+    first_name: "Owner",
+    last_name: "User",
+    email: "owner@vetclinic.com",
+    password: "password123",
+    role: :owner
+  )
+]
 
 owners = [
   Owner.create!(
@@ -198,6 +223,7 @@ Treatment.create!(
 )
 
 puts "Seed data created successfully!"
+puts "#{User.count} users"
 puts "#{Owner.count} owners"
 puts "#{Pet.count} pets"
 puts "#{Vet.count} vets"
